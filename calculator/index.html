@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/calculator.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <title>G- Calculator</title>
-  </head>
-  <body>
-    <h2>Calculator</h2>
-     
-      <div class="container">
-        <div id="display"></div>
-        <div class="buttons">
-          <div class="button">C</div>
-          <div class="button">CE</div>
-          <div class="button">%</div>
-          <div class="button">/</div>
-          <div class="button">sin</div>
-          <div class="button">7</div>
-          <div class="button">8</div>
-          <div class="button">9</div>
-          <div class="button">*</div>
-          <div class="button">cos</div>
-          <div class="button">4</div>
-          <div class="button">5</div>
-          <div class="button">6</div>
-          <div class="button">-</div>
-          <div class="button">tan</div>
-          <div class="button">1</div>
-          <div class="button">2</div>
-          <div class="button">3</div>
-          <div class="button">+</div>
-          <div class="button">sqrt</div>
-          <div class="button left">0</div>
-          <div class="button ">00</div>
-          <div class="button ">.</div>
-          <div class="button ">pi</div>
-          <div id="equal" class="button right">=</div>
-        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <!-- Display Screen -->
+            <div class="display">
+                <div class="previous-operand" id="previous-operand"></div>
+                <div class="current-operand" id="current-operand">0</div>
+            </div>
+            
+            <!-- Calculator Buttons -->
+            <div class="buttons">
+                <!-- Row 1: Function buttons -->
+                <button class="btn btn-function" id="clear">AC</button>
+                <button class="btn btn-function" id="delete">⌫</button>
+                <button class="btn btn-function" id="percentage">%</button>
+                <button class="btn btn-operator" id="divide">÷</button>
+                
+                <!-- Row 2: Numbers and multiply -->
+                <button class="btn btn-number" data-number="7">7</button>
+                <button class="btn btn-number" data-number="8">8</button>
+                <button class="btn btn-number" data-number="9">9</button>
+                <button class="btn btn-operator" id="multiply">×</button>
+                
+                <!-- Row 3: Numbers and subtract -->
+                <button class="btn btn-number" data-number="4">4</button>
+                <button class="btn btn-number" data-number="5">5</button>
+                <button class="btn btn-number" data-number="6">6</button>
+                <button class="btn btn-operator" id="subtract">−</button>
+                
+                <!-- Row 4: Numbers and add -->
+                <button class="btn btn-number" data-number="1">1</button>
+                <button class="btn btn-number" data-number="2">2</button>
+                <button class="btn btn-number" data-number="3">3</button>
+                <button class="btn btn-operator" id="add">+</button>
+                
+                <!-- Row 5: Zero, decimal and equals -->
+                <button class="btn btn-number zero" data-number="0">0</button>
+                <button class="btn btn-number" id="decimal">.</button>
+                <button class="btn btn-equals" id="equals">=</button>
+            </div>
         </div>
-      </div>
+    </div>
+    
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
