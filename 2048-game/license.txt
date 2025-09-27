@@ -1,0 +1,36 @@
+MIT License
+
+Copyright (c) 2025 Gaurav
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+---
+
+## 🚀 Follow Me for More Projects!  
+
+I’m building **365 projects in 365 days!** 🔥 Stay updated with my latest work and coding challenges:  
+
+📌 **Instagram** – [instagram.com/the_gaurav_codes](https://instagram.com/the_gaurav_codes)  
+📌 **GitHub** – [github.com/the-gaurav-codes](https://github.com/the-gaurav-codes)  
+📌 **YouTube** – [youtube.com/c/CodeWithGaurav](https://youtube.com/c/CodeWithGaurav)  
+📌 **LinkedIn** – [linkedin.com/in/thegauravcodes](https://linkedin.com/in/thegauravcodes)  
+📌 **X (Twitter)** – [x.com/the_gaurav_code](https://x.com/the_gaurav_code)  
+
+✨ **Follow, Star ⭐, and Share!** More exciting projects coming soon! 🚀  
