@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster Pro - Advanced Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-left">
+                <h1 class="app-title">
+                    <i class="fas fa-check-circle"></i>
+                    TaskMaster Pro
+                </h1>
+                <div class="date-display">
+                    <span id="current-date"></span>
+                </div>
+            </div>
+            <div class="header-right">
+                <button class="btn-icon focus-timer-btn" id="focus-timer-btn" title="Focus Timer">
+                    <i class="fas fa-clock"></i>
+                </button>
+                <button class="btn-icon stats-btn" id="stats-btn" title="Statistics">
+                    <i class="fas fa-chart-line"></i>
+                </button>
+                <button class="btn-icon theme-toggle" id="theme-toggle" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3>Quick Stats</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number" id="total-tasks">0</div>
+                            <div class="stat-label">Total</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" id="completed-tasks">0</div>
+                            <div class="stat-label">Done</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" id="pending-tasks">0</div>
+                            <div class="stat-label">Pending</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Filters</h3>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">
+                            <i class="fas fa-list"></i> All Tasks
+                        </button>
+                        <button class="filter-btn" data-filter="pending">
+                            <i class="fas fa-clock"></i> Pending
+                        </button>
+                        <button class="filter-btn" data-filter="completed">
+                            <i class="fas fa-check"></i> Completed
+                        </button>
+                        <button class="filter-btn" data-filter="high">
+                            <i class="fas fa-exclamation-triangle"></i> High Priority
+                        </button>
+                        <button class="filter-btn" data-filter="today">
+                            <i class="fas fa-calendar-day"></i> Due Today
+                        </button>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Categories</h3>
+                    <div class="category-list" id="category-list">
+                        <div class="category-item" data-category="work">
+                            <span class="category-color" style="background: #3b82f6;"></span>
+                            Work
+                        </div>
+                        <div class="category-item" data-category="personal">
+                            <span class="category-color" style="background: #10b981;"></span>
+                            Personal
+                        </div>
+                        <div class="category-item" data-category="urgent">
+                            <span class="category-color" style="background: #f59e0b;"></span>
+                            Urgent
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Task Area -->
+            <div class="task-area">
+                <!-- Task Input -->
+                <div class="task-input-section">
+                    <div class="task-input-container">
+                        <input 
+                            type="text" 
+                            id="task-input" 
+                            placeholder="Add a new task... (try 'Buy groceries tomorrow high priority')"
+                            autocomplete="off"
+                        >
+                        <button class="add-task-btn" id="add-task-btn">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="quick-options">
+                        <select id="priority-select">
+                            <option value="low">Low Priority</option>
+                            <option value="medium" selected>Medium Priority</option>
+                            <option value="high">High Priority</option>
+                        </select>
+                        <select id="category-select">
+                            <option value="work">Work</option>
+                            <option value="personal">Personal</option>
+                            <option value="urgent">Urgent</option>
+                        </select>
+                        <input type="date" id="due-date-input">
+                    </div>
+                </div>
+
+                <!-- Search and Sort -->
+                <div class="search-sort-section">
+                    <div class="search-container">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="search-input" placeholder="Search tasks...">
+                        <button class="clear-search" id="clear-search">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="sort-options">
+                        <select id="sort-select">
+                            <option value="created">Sort by Created</option>
+                            <option value="priority">Sort by Priority</option>
+                            <option value="due-date">Sort by Due Date</option>
+                            <option value="alphabetical">Sort Alphabetically</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Task List -->
+                <div class="task-list-container">
+                    <div id="task-list" class="task-list">
+                        <!-- Tasks will be dynamically generated here -->
+                    </div>
+                    <div class="empty-state" id="empty-state">
+                        <i class="fas fa-clipboard-check"></i>
+                        <h3>No tasks yet!</h3>
+                        <p>Add your first task to get started</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Modals -->
+        <!-- Focus Timer Modal -->
+        <div class="modal" id="focus-timer-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Focus Timer</h2>
+                    <button class="close-modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="timer-display">
+                        <div class="timer-circle">
+                            <div class="timer-time" id="timer-display">25:00</div>
+                        </div>
+                    </div>
+                    <div class="timer-controls">
+                        <button class="timer-btn" id="start-timer">
+                            <i class="fas fa-play"></i> Start
+                        </button>
+                        <button class="timer-btn" id="pause-timer" disabled>
+                            <i class="fas fa-pause"></i> Pause
+                        </button>
+                        <button class="timer-btn" id="reset-timer">
+                            <i class="fas fa-stop"></i> Reset
+                        </button>
+                    </div>
+                    <div class="timer-presets">
+                        <button class="preset-btn" data-minutes="25">25m</button>
+                        <button class="preset-btn" data-minutes="15">15m</button>
+                        <button class="preset-btn" data-minutes="45">45m</button>
+                        <button class="preset-btn" data-minutes="60">60m</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics Modal -->
+        <div class="modal" id="stats-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Task Statistics</h2>
+                    <button class="close-modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="stats-overview">
+                        <div class="stats-card">
+                            <div class="stats-number" id="total-created">0</div>
+                            <div class="stats-title">Tasks Created</div>
+                        </div>
+                        <div class="stats-card">
+                            <div class="stats-number" id="total-completed-ever">0</div>
+                            <div class="stats-title">Tasks Completed</div>
+                        </div>
+                        <div class="stats-card">
+                            <div class="stats-number" id="completion-rate">0%</div>
+                            <div class="stats-title">Completion Rate</div>
+                        </div>
+                    </div>
+                    <div class="stats-charts">
+                        <h3>Productivity Streak</h3>
+                        <div class="streak-display" id="streak-display">0 days</div>
+                        <div class="progress-chart">
+                            <div class="progress-bar" id="daily-progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Task Edit Modal -->
+        <div class="modal" id="task-edit-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Edit Task</h2>
+                    <button class="close-modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" id="edit-task-title" placeholder="Task title">
+                    <textarea id="edit-task-description" placeholder="Task description (optional)"></textarea>
+                    <div class="edit-options">
+                        <select id="edit-priority">
+                            <option value="low">Low Priority</option>
+                            <option value="medium">Medium Priority</option>
+                            <option value="high">High Priority</option>
+                        </select>
+                        <select id="edit-category">
+                            <option value="work">Work</option>
+                            <option value="personal">Personal</option>
+                            <option value="urgent">Urgent</option>
+                        </select>
+                        <input type="date" id="edit-due-date">
+                    </div>
+                    <div class="modal-actions">
+                        <button class="btn-secondary" id="cancel-edit">Cancel</button>
+                        <button class="btn-primary" id="save-edit">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
