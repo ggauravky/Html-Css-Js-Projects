@@ -3,6 +3,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-ggauravky-181717?logo=github&logoColor=white)](https://github.com/ggauravky)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-gauravky-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gauravky/)
 [![Instagram](https://img.shields.io/badge/Instagram-@the_gau_rav-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/the_gau_rav/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 Welcome — this folder collects small front-end projects (HTML, CSS, JS) made to showcase skills and experiments. Each subfolder is a standalone project you can open in a browser or serve with a static server.
 
@@ -60,6 +61,10 @@ To add a new project:
 - Instagram: https://www.instagram.com/the_gau_rav/
 
 Feel free to open an issue or contact me through any of the links above.
+
+## License
+
+This collection is released under the MIT License — see the `LICENSE` file for details.
 
 ---
 
