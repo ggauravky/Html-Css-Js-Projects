@@ -1,71 +1,103 @@
-# Web Dev Projects Collection
+<div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-ggauravky-181717?logo=github&logoColor=white)](https://github.com/ggauravky)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-gauravky-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gauravky/)
-[![Instagram](https://img.shields.io/badge/Instagram-@the_gau_rav-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/the_gau_rav/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+# Front-End Projects Collection
 
-Welcome — this folder collects small front-end projects (HTML, CSS, JS) made to showcase skills and experiments. Each subfolder is a standalone project you can open in a browser or serve with a static server.
+A curated collection of browser-based projects built with HTML, CSS, JavaScript, and a few focused UI/game libraries. Each folder is a standalone project with its own `index.html`, styling, scripts, assets, and live Netlify deployment.
 
-## Projects
+[![GitHub](https://img.shields.io/badge/GitHub-ggauravky-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ggauravky)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-gauravky-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gauravky/)
+[![Instagram](https://img.shields.io/badge/Instagram-the__gau__rav-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/the_gau_rav/)
+[![License](https://img.shields.io/badge/License-MIT-2E7D32?style=for-the-badge)](LICENSE)
 
-Below are the projects included in this collection. Click a folder name to open it in your editor or file browser.
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](#tech-stack)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](#tech-stack)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](#tech-stack)
+[![Netlify](https://img.shields.io/badge/Deployed%20on-Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white)](#project-gallery)
 
-- `2048-game` — A browser implementation of the classic 2048 sliding puzzle game (HTML/CSS/JS).
-- `calculator` — A simple calculator UI with JavaScript logic and custom font.
-- `captcha-generator` — Small CAPTCHA image/text generator demo.
-- `ecommerce-website-master` — Multi-page e-commerce static template (assets, styles, JS).
-- `flappy-bird` — A browser remake of Flappy Bird using canvas and JavaScript.
-- `food delivery website` — Static demo of a food delivery storefront with products and JS app logic.
-- `rubix cube` — Interactive Rubik's Cube demo / visual experiments.
-- `TO-DO-LIST` — Minimal to-do list app using vanilla JS.
-- `Todo List - Advanced` — A more featureful todo app (localStorage, filters, UI polish).
+</div>
 
-If you add more projects, please include a short README inside that project folder describing how to run it and crediting any external assets.
+## Project Gallery
 
-## How to run
+| # | Project | Description | Live Link | Source Folder |
+|---|---|---|---|---|
+| 01 | [2048 Game](./001%202048-game/) | Classic sliding-tile puzzle with keyboard and touch controls, scoring, best score, win checks, and restart flow. | [![Open Live Site](https://img.shields.io/badge/Open-Live%20Site-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://g2024game.netlify.app/) | `001 2048-game` |
+| 02 | [Calculator](./002%20calculator/) | Clean vanilla JavaScript calculator with a responsive keypad, custom font, and simple arithmetic workflow. | [![Open Live Site](https://img.shields.io/badge/Open-Live%20Site-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://gkycalculator.netlify.app/) | `002 calculator` |
+| 03 | [Captcha Generator](./003%20captcha-generator/) | Random six-character CAPTCHA generator with reload support, input validation, and success/error feedback. | [![Open Live Site](https://img.shields.io/badge/Open-Live%20Site-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://gcapcha.netlify.app/) | `003 captcha-generator` |
+| 04 | [E-commerce Website](./004%20ecommerce-website-master/) | Responsive shopping storefront with banners, category navigation, product grids, promotional sections, and icon-rich UI. | [![Open Live Site](https://img.shields.io/badge/Open-Live%20Site-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://gshoppingweb.netlify.app/) | `004 ecommerce-website-master` |
+| 05 | [Flappy Bird](./005%20flappy-bird/) | Arcade-style browser game with gravity, pipe generation, collision detection, scoring, and keyboard/mouse/touch input. | [![Open Live Site](https://img.shields.io/badge/Open-Live%20Site-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://flappy-bird-game-gaurav.netlify.app/) | `005 flappy-bird` |
+| 06 | [Food Delivery Website](./006%20food%20delivery%20website/) | Food ordering storefront with responsive navigation, Swiper carousel, product JSON, localStorage cart, and quantity controls. | [![Open Live Site](https://img.shields.io/badge/Open-Live%20Site-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://gfooddelievery.netlify.app/) | `006 food delivery website` |
+| 07 | [Rubik's Cube](./007%20rubix%20cube/) | Interactive 3D cube built with Three.js, custom themes, timer, stats, saved state, and drag/touch controls. | [![Open Live Site](https://img.shields.io/badge/Open-Live%20Site-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://g-rubix-cube.netlify.app/) | `007 rubix cube` |
+| 08 | [To-Do List](./008%20TO-DO-LIST/) | Lightweight task manager for adding, completing, filtering, counting, and deleting todos. | [![Open Live Site](https://img.shields.io/badge/Open-Live%20Site-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://g-to-do-list-g.netlify.app/) | `008 TO-DO-LIST` |
+| 09 | [Advanced To-Do List](./009%20Todo%20List%20-%20Advanced/) | Feature-rich todo app with localStorage, search, filters, priorities, due dates, theme toggle, stats, drag-and-drop, and focus timer. | [![Open Live Site](https://img.shields.io/badge/Open-Live%20Site-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://gtodolista.netlify.app/) | `009 Todo List - Advanced` |
 
-Quick options (pick one):
+## Tech Stack
 
-- Double-click/open the project's `index.html` in your browser.
-- Use the Live Server extension in VS Code (recommended) for correct relative paths and hot reload.
-- Serve with a simple static HTTP server (PowerShell examples):
+| Logo | Technology | Used For | Used In |
+|---|---|---|---|
+| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) | HTML5 | Page structure, semantic sections, forms, game screens, and app layouts. | All projects |
+| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) | CSS3 | Responsive layouts, animations, custom themes, cards, grids, and visual polish. | All projects |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) | JavaScript | App logic, DOM updates, games, form validation, storage, cart behavior, and interactions. | All projects |
+| ![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white) | Sass | Source styling for the 3D cube experience. | Rubik's Cube |
+| ![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white) | JSON | Product data, saved app data, and import/export-friendly structured content. | Food Delivery Website, Advanced To-Do List |
+| ![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=threedotjs&logoColor=white) | Three.js | WebGL rendering, 3D cube geometry, lighting, animation, and camera controls. | Rubik's Cube |
+| ![Swiper](https://img.shields.io/badge/Swiper-6332F6?style=for-the-badge&logo=swiper&logoColor=white) | Swiper.js | Touch-friendly carousel/slider sections. | Food Delivery Website |
+| ![Font Awesome](https://img.shields.io/badge/Font%20Awesome-528DD7?style=for-the-badge&logo=fontawesome&logoColor=white) | Font Awesome | Interface icons for actions, cart controls, todo actions, and buttons. | Food Delivery Website, Advanced To-Do List |
+| ![Boxicons](https://img.shields.io/badge/Boxicons-2D9CDB?style=for-the-badge&logo=box&logoColor=white) | Boxicons | Todo action icons. | To-Do List |
+| ![Ionicons](https://img.shields.io/badge/Ionicons-3880FF?style=for-the-badge&logo=ionic&logoColor=white) | Ionicons | Social, navigation, and commerce interface icons. | E-commerce Website |
+| ![Google Fonts](https://img.shields.io/badge/Google%20Fonts-4285F4?style=for-the-badge&logo=googlefonts&logoColor=white) | Google Fonts | Typography through Poppins and Inter. | E-commerce Website, Advanced To-Do List |
+| ![LocalStorage](https://img.shields.io/badge/Web%20Storage-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white) | Web Storage API | Persistent carts, saved tasks, preferences, stats, and game state. | Food Delivery Website, Rubik's Cube, Advanced To-Do List |
+| ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white) | Netlify | Static hosting and live project deployments. | All live demos |
 
-```powershell
-# From the repository root, serve on port 8000 (Python 3.x must be installed)
-python -m http.server 8000
+## Repository Structure
 
-# Or using Node (install http-server first: npm i -g http-server)
-npx http-server -p 8000
+```text
+projects add to github/
+|-- 001 2048-game/
+|-- 002 calculator/
+|-- 003 captcha-generator/
+|-- 004 ecommerce-website-master/
+|-- 005 flappy-bird/
+|-- 006 food delivery website/
+|-- 007 rubix cube/
+|-- 008 TO-DO-LIST/
+|-- 009 Todo List - Advanced/
+|-- LICENSE
+`-- README.md
 ```
 
-Then open http://localhost:8000/ and navigate to the project folder.
+## Run Locally
 
-## Notes on assets & licenses
+These are static front-end projects, so no build step is required.
 
-- Some projects include images, fonts and icons in their `assets/` or `img/` folders. Check each project's folder for any license or attribution files.
+```powershell
+# Option 1: open any project directly
+start ".\001 2048-game\index.html"
+
+# Option 2: serve the full collection locally
+python -m http.server 8000
+```
+
+Then open `http://localhost:8000/` and choose a project folder.
+
+You can also use the VS Code Live Server extension for hot reload while editing.
 
 ## Contributing
 
-To add a new project:
+1. Add a new numbered project folder.
+2. Include an `index.html`, stylesheet, script file, and any required assets.
+3. Deploy the project and add its live link to the Project Gallery table.
+4. Update the Tech Stack table if the project introduces a new library or tool.
 
-1. Create a new folder with a descriptive name.
-2. Include an `index.html`, `style.css` and (optional) `script.js` for interactivity.
-3. Add a short `README.md` inside the project describing purpose, tech used, and run instructions.
-4. Open a PR or copy the folder into this collection.
+## Connect
 
-## Contact & Social
-
-- LinkedIn: https://www.linkedin.com/in/gauravky/
-- GitHub: https://github.com/ggauravky
-- Instagram: https://www.instagram.com/the_gau_rav/
-
-Feel free to open an issue or contact me through any of the links above.
+[![GitHub](https://img.shields.io/badge/GitHub-ggauravky-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/ggauravky)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-gauravky-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gauravky/)
+[![Instagram](https://img.shields.io/badge/Instagram-the__gau__rav-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/the_gau_rav/)
 
 ## License
 
-This collection is released under the MIT License — see the `LICENSE` file for details.
+This collection is released under the [MIT License](LICENSE).
 
 ---
 
-Made with ♥ by Gaurav
+Made with HTML, CSS, and JavaScript by Gaurav.
